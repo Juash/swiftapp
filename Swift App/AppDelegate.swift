@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Joshua Benodin on 1/26/17.
-//  Copyright © 2017 Joshua Benodin. All rights reserved.
+//  Copyright © 2017 Joshua Benodin. All rights reserved. 💡
 //
 
 import UIKit
