@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,16 +34,59 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZOZ-yK-rBw"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTo-Nk-tIl">
+                                <rect key="frame" x="175" y="149" width="25" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jZU-kR-57R">
+                                <rect key="frame" x="137.5" y="149" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vqZ-kb-rb1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lkg-6F-cJy">
+                                <rect key="frame" x="137.5" y="195" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="bLX-rD-thx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vc0-N2-G0G">
+                                <rect key="frame" x="137" y="195" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="W2G-iW-y84"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kdT-61-KlB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0iQ-Kl-wPd"/>
+                            <constraint firstItem="vc0-N2-G0G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ff-oo-nOv"/>
+                            <constraint firstItem="vc0-N2-G0G" firstAttribute="top" secondItem="jZU-kR-57R" secondAttribute="bottom" constant="16" id="4mq-CX-nim"/>
+                            <constraint firstItem="jZU-kR-57R" firstAttribute="top" secondItem="kdT-61-KlB" secondAttribute="bottom" constant="8" id="LoY-U4-fRj"/>
+                            <constraint firstItem="jZU-kR-57R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="McT-I5-x2p"/>
                             <constraint firstItem="kdT-61-KlB" firstAttribute="top" secondItem="aNQ-el-e3W" secondAttribute="bottom" constant="50" id="QPk-Ea-FjM"/>
+                            <constraint firstItem="Lkg-6F-cJy" firstAttribute="top" secondItem="jZU-kR-57R" secondAttribute="bottom" constant="16" id="XHl-sq-79p"/>
+                            <constraint firstItem="Lkg-6F-cJy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dGT-Vb-zxy"/>
                             <constraint firstItem="aNQ-el-e3W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="dSw-o8-1Mc"/>
+                            <constraint firstItem="WTo-Nk-tIl" firstAttribute="top" secondItem="kdT-61-KlB" secondAttribute="bottom" constant="8" id="f75-fQ-tmT"/>
                             <constraint firstItem="aNQ-el-e3W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMu-jx-EuD"/>
+                            <constraint firstItem="WTo-Nk-tIl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sp3-Un-iIt"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="jZU-kR-57R" id="Rms-ke-Eyl"/>
+                        <outlet property="text2" destination="vc0-N2-G0G" id="Hpd-Nt-l5a"/>
                         <outlet property="theLabel" destination="aNQ-el-e3W" id="shx-dO-Zri"/>
                     </connections>
                 </viewController>
