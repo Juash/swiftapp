@@ -17,7 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
 
     @IBAction func buttonTapped(_ sender: Any) {
-        theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+
+        let addition = true
+
+        if addition {
+            theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            theLabel.text = "\(Double(text1.text!)! - Double(text2.text!)!)"
+        }
+
     }
 
     override func viewDidLoad() {
@@ -29,7 +37,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
